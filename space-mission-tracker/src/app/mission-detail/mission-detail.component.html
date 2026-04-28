@@ -1,0 +1,9 @@
+<section class="detail-card" [class.success]="mission.successo" [class.failure]="!mission.successo">
+    <h2>Dettagli missione</h2>
+    <div class="detail-row"><span>Nome missione:</span> {{ mission.nomeMissione }}</div>
+    <div class="detail-row"><span>Agenzia spaziale:</span> {{ mission.agenzia }}</div>
+    <div class="detail-row"><span>Destinazione:</span> {{ mission.destinazione }}</div>
+    <div class="detail-row"><span>Anno di lancio:</span> {{ mission.anno }}</div>
+    <div class="detail-row"><span>Equipaggio:</span> {{ mission.equipaggio }} membri</div>
+    <div class="detail-row"><span>Risultato:</span> {{ mission.successo ? 'Successo' : 'Fallita' }}</div>
+</section>
